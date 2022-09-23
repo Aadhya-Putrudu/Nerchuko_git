@@ -1,11 +1,19 @@
 #include<stdio.h>
 
+void Fibonacci(int Num);
+
 int main()
 {
     printf("Program to print n terms of fibonacci : \n");
     printf("Enter the number : ");
     int Num;
     scanf("%d",&Num);
+    Fibonacci(Num);
+    return 0;   
+}
+
+void Fibonacci(int Num)
+{
     int First=0, Second=1,Third=0;
     //printf("%d \n%d \n",First,Second);
     if (Num==0||Num==1)
@@ -29,5 +37,4 @@ int main()
     }
     printf("%dth term in fibonacci sequence is %d",Num, Third);
     }
-    return 0;   
 }
